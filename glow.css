@@ -24,52 +24,41 @@ h1 span{
     display: table-cell;
     margin: 20px;
     padding: 2rem;
-    animation: animate 3s ease infinite;
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+    animation-duration: 4.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
 }
 
-h1 span:nth-child(1)
-{
-    animation-delay: 0s;
-}
-h1 span:nth-child(2)
-{
-    animation-delay: 0.3s;
-}
-h1 span:nth-child(3)
-{
-    animation-delay: 0.6s;
-}
-h1 span:nth-child(4)
-{
-    animation-delay: 0.9s;
-}
-h1 span:nth-child(5)
-{
-    animation-delay: 1.2s;
-}
-h1 span:nth-child(6)
-{
-    animation-delay: 1.6s;
+h1 span:nth-child(1){ animation-name: glow-letter-1; }
+h1 span:nth-child(2){ animation-name: glow-letter-2; }
+h1 span:nth-child(3){ animation-name: glow-letter-3; }
+h1 span:nth-child(4){ animation-name: glow-letter-4; }
+h1 span:nth-child(5){ animation-name: glow-letter-5; }
+
+@keyframes glow-letter-1{
+    0%,7%,54%,63%,72%,100%{ color: #111; filter: blur(0px); text-shadow: none; }
+    2%,5%,58%,67%{ color: #fff; filter: blur(2px); text-shadow: 0 0 10px #ff9d00, 0 0 20px #ff9d00, 0 0 40px #ff9d00, 0 0 80px #ff9d00, 0 0 120px #ff9d00, 0 0 200px #ff9d00, 0 0 300px #ff9d00, 0 0 400px #ff9d00; }
 }
 
+@keyframes glow-letter-2{
+    0%,9%,16%,54%,63%,72%,100%{ color: #111; filter: blur(0px); text-shadow: none; }
+    11%,14%,58%,67%{ color: #fff; filter: blur(2px); text-shadow: 0 0 10px #ff9d00, 0 0 20px #ff9d00, 0 0 40px #ff9d00, 0 0 80px #ff9d00, 0 0 120px #ff9d00, 0 0 200px #ff9d00, 0 0 300px #ff9d00, 0 0 400px #ff9d00; }
+}
 
-@keyframes animate{
-    0%,100%{
-        color: #fff;
-        filter: blur(2px);
-        text-shadow: 0 0 10px #ff9d00,
-        0 0 20px #ff9d00,
-        0 0 400px #ff9d00,
-        0 0 80px #ff9d00,
-        0 0 120px #ff9d00,
-        0 0 200px #ff9d00,
-        0 0 300px #ff9d00,
-        0 0 400px #ff9d00;
-    }
+@keyframes glow-letter-3{
+    0%,18%,25%,54%,63%,72%,100%{ color: #111; filter: blur(0px); text-shadow: none; }
+    20%,23%,58%,67%{ color: #fff; filter: blur(2px); text-shadow: 0 0 10px #ff9d00, 0 0 20px #ff9d00, 0 0 40px #ff9d00, 0 0 80px #ff9d00, 0 0 120px #ff9d00, 0 0 200px #ff9d00, 0 0 300px #ff9d00, 0 0 400px #ff9d00; }
+}
 
-    5%,95%{
-        color: #111;
-        filter: blur(0px);
-        text-shadow: none;
-    }
+@keyframes glow-letter-4{
+    0%,27%,34%,54%,63%,72%,100%{ color: #111; filter: blur(0px); text-shadow: none; }
+    29%,32%,58%,67%{ color: #fff; filter: blur(2px); text-shadow: 0 0 10px #ff9d00, 0 0 20px #ff9d00, 0 0 40px #ff9d00, 0 0 80px #ff9d00, 0 0 120px #ff9d00, 0 0 200px #ff9d00, 0 0 300px #ff9d00, 0 0 400px #ff9d00; }
+}
+
+@keyframes glow-letter-5{
+    0%,36%,45%,54%,63%,72%,100%{ color: #111; filter: blur(0px); text-shadow: none; }
+    38%,43%,58%,67%{ color: #fff; filter: blur(2px); text-shadow: 0 0 10px #ff9d00, 0 0 20px #ff9d00, 0 0 40px #ff9d00, 0 0 80px #ff9d00, 0 0 120px #ff9d00, 0 0 200px #ff9d00, 0 0 300px #ff9d00, 0 0 400px #ff9d00; }
 }
